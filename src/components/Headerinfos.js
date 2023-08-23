@@ -34,6 +34,16 @@ const Headerinfos = () => {
             percent={headerData.market_cap_change_percentage_24h_usd}
           />
         </li>
+        <li>
+          BTC dominance :{" "}
+          {headerData.market_cap_percentage &&
+            headerData.market_cap_percentage.btc.toFixed(1) + "%"}
+        </li>
+        <li>
+          ETH dominance :{" "}
+          {headerData.market_cap_percentage &&
+            headerData.market_cap_percentage.eth.toFixed(1) + "%"}
+        </li>
       </ul>
     </div>
   );
